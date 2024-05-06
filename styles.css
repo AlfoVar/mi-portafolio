@@ -172,6 +172,7 @@ img {
   max-height: 100%;
 }
 
+
 .academic__courses__item__img_un {
   background-color: #ffffff;
   text-align: center;
@@ -333,6 +334,10 @@ img {
   .menu {
     height: 60px;
     font-size: 12px;
+  }
+
+  .menu__container {
+    width: 668px;
   }
 
   .menu__list {
