@@ -1,0 +1,482 @@
+*,
+*::before,
+*::after {
+  --azul-petrolio: #415a77;
+  --naranja: #f6995c;
+  --cafe-Claro: #f0ebe3;
+  --gris-texto: #464646;
+  --gris-claro: #d9d9d9;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f6f5f2;
+  color: var(--gris-texto);
+  font-size: 16px;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.menu {
+  background-color: transparent;
+  height: 86px;
+  width: 100%;
+  padding: 0 25px;
+  position: absolute;
+}
+
+.menu__container {
+  width: 616px;
+}
+
+.menu__list a {
+  color: var(--azul-petrolio);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu__list__item__contato {
+  display: none;
+}
+
+.title {
+  background-color: var(--naranja);
+  height: 686px;
+}
+
+.title__profile {
+  width: 100%;
+  height: calc(100% - 0px); /* Restamos 86px a la altura total */
+  object-fit: cover;
+  padding-top: 86px; /* Agregamos un padding-top de 86px */
+  box-sizing: border-box;
+  background-color: var(--gris-claro);
+}
+
+.title__div {
+  width: 100%;
+}
+
+.title__container {
+  margin: auto;
+  padding: 17% 11%;
+}
+
+.title__bio {
+  color: #ffffff;
+  text-align: left;
+  font-size: 52px;
+  text-transform: uppercase;
+}
+
+.title__subsection {
+  background-color: var(--azul-petrolio);
+  color: #ffffff;
+  border: none;
+  width: 262px;
+  height: 51px;
+}
+
+.title__network {
+  padding: initial;
+  padding-right: 180px;
+}
+
+.title__network__item a,
+img {
+  color: var(--azul-petrolio);
+}
+
+.about {
+  background-color: var(--cafe-Claro);
+  padding: 1px 0 0 0;
+}
+
+.about__container {
+  margin: 8%;
+}
+
+.about__container img {
+  width: 11%;
+}
+
+.skills {
+  margin: 6% 8%;
+}
+
+.skills__box {
+  margin: 5px;
+  width: 176px;
+  text-align: start;
+  background-color: #ffffff;
+  font-size: 16px;
+}
+
+.skills__box ul {
+  padding-top: 42%;
+}
+
+.skills__title {
+  text-align: center;
+}
+
+.hobbies {
+  margin: 6% 8%;
+}
+
+.hobbies__title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.hobbies__box {
+  margin: 5px;
+  width: 176px;
+  text-align: start;
+  background-color: #ffffff;
+  font-size: 16px;
+}
+
+.hobbies__box ul {
+  padding-top: 42%;
+}
+
+.academic {
+  background-color: var(--cafe-Claro);
+  padding: 6%;
+}
+
+.academic__title {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.academic__courses {
+  font-size: 16px;
+}
+
+.academic__courses__item__img {
+  background-color: #ffffff;
+  text-align: center;
+  width: 368px;
+  height: 286px;
+}
+
+.academic__courses__item__img img {
+  margin: 20%;
+  width: 48%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.academic__courses__item__title {
+  max-width: 368px;
+}
+
+.experience {
+  padding: 6%;
+}
+
+.experience__box {
+  padding: 4%;
+}
+
+.experience__section__title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.experience__box img {
+    width: auto; /* La imagen ocupará el 100% del ancho de su contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción de la imagen */
+    object-fit: cover;
+    object-position: top;
+}
+
+.experience__info-container {
+  padding-top: 148px;
+}
+
+.experience__info-container h2 {
+  font-size: 22px;
+}
+
+.experiencia__botao--repo {
+  background-color: white;
+  color: var(--azul-petrolio);
+  padding: 5%;
+  border: 1px solid var(--azul-petrolio);
+}
+
+.experience__botao--demo {
+  background-color: var(--azul-petrolio);
+  color: #ffffff;
+  padding: 5%;
+  border: none;
+}
+
+.formcontato__img {
+  width: 464px;
+}
+
+.formcontato {
+  background-color: var(--cafe-Claro);
+  padding: 6%;
+}
+
+.form_input {
+  width: 100%;
+  height: 38px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.form_input input {
+  width: 100%;
+  height: 100%;
+  color: var(--gris-texto);
+  padding-top: 20px;
+  padding-left: 7px;
+  border: none;
+  outline: 0;
+}
+
+.form_input .label_input {
+  position: absolute;
+  /* background-color: white; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid var(--gris-claro);
+}
+
+.form_input .label_input:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid var(--azul-petrolio);
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+
+.text_form {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  transition: all 0.3s ease;
+  color: var(--gris-texto);
+}
+
+.form_input input:focus + .label_input .text_form,
+.form_input input:valid + .label_input .text_form {
+  transform: translateY(-150%);
+  font-weight: bold;
+  font-size: 12px;
+  color: var(--azul-petrolio);
+}
+
+.form_input input:focus + .label_input:after,
+.form_input input:valid + .label_input:after {
+  transform: translateX(0);
+}
+.formcontato__textarea {
+  width: 100%;
+  height: 133px;
+  margin: 15px;
+  border: none;
+  border-bottom: 3px solid var(--azul-petrolio);
+  outline: 0;
+}
+
+.formcontato__botao {
+  width: 148px;
+  height: 51px;
+  margin: 14px;
+  border: none;
+  background: var(--azul-petrolio);
+  color: white;
+}
+
+.footer {
+  padding: 6px;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 1040px) {
+  body {
+    font-size: 14px;
+  }
+  .menu {
+    height: 60px;
+    font-size: 12px;
+  }
+
+  .menu__list {
+    display: none;
+  }
+
+  .menu__list__item__contato {
+    display: block;
+    margin-left: 72%;
+    font-weight: bold;
+  }
+
+  .menu__list__item__contato a {
+    color: var(--azul-petrolio);
+  }
+
+  .title {
+    height: 400px;
+  }
+
+  .title__div {
+    width: 325px;
+    margin-right: 50px;
+  }
+
+  .title__container {
+    margin-top: 16%;
+  }
+
+  .title__bio {
+    font-size: 22px;
+    color: var(--azul-petrolio);
+  }
+
+  .title__network{
+    padding-right: 2px;
+  }
+
+  .title__profile {
+    padding-top: 60px;
+  }
+
+  .about__container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .academic__courses {
+    font-size: 10px;
+  }
+
+  .academic__courses__box {
+    width: 224px;
+    height: 169px;
+  }
+
+  .academic__courses__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .academic__courses__item__title h4 {
+    font-weight: bold;
+  }
+
+  .academic__courses__item__img {
+    width: 100%;
+    height: 118px;
+  }
+
+  .academic__courses__item__img img {
+    margin: 20px;
+    width: 84px;
+  }
+
+  .experience__info-container {
+    padding-top: 0;
+  }
+
+  .experience__botao--demo {
+    padding: 2%;
+  }
+
+  .experiencia__botao--repo {
+    padding: 2%;
+  }
+
+  .formcontato--esquerda {
+    display: none;
+  }
+}
+
+@media (max-width: 834px) {
+  body {
+    font-size: 12px;
+  }
+  .menu {
+    background-color: var(--cafe-Claro);
+  }
+
+  .menu__list {
+    display: none;
+  }
+
+  .menu__container {
+    width: 181px;
+  }
+
+  .menu__list__item__contato {
+    margin-left: 3px;
+    display: block;
+  }
+
+  .title {
+    height: 468px;
+  }
+
+  .title__container {
+    margin: auto;
+    padding: 0% 8%;
+  }
+
+  .title__bio {
+    padding-right: 75px;
+  }
+
+  .title__div {
+    height: 200px;
+    width: 100%;
+  }
+
+  .title__subsection {
+    height: 40px;
+  }
+
+  .title__network {
+    font-size: 14px;
+  }
+
+  .title__profile {
+    height: 290px;
+  }
+
+  .about__container img {
+    width: 26%;
+  }
+
+  .skills__box {
+    width: 140px;
+  }
+
+  .hobbies__box {
+    width: 140px;
+  }
+
+  .experience__box img {
+    height: 164px;
+  }
+}
+

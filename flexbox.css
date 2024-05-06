@@ -1,0 +1,108 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+.menu__header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.menu__container {
+  bottom: 0;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.menu__list__item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.title__network {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title__network__item{
+  flex-grow: 1;
+}
+
+.skills__line {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 3%; */
+}
+
+.skills__box {
+  flex-grow: 1;
+}
+
+.hobbies__line {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hobbies__box {
+    flex-grow: 1;
+}
+
+.academic__courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.academic__courses__box {
+  flex-grow: 1;
+}
+
+.experience__box{
+  display: flex;
+  justify-content: start;
+  gap: 12px;
+}
+
+.formcontato__contacto{
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.formcontato__form{
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1040px) {
+  .title__div {
+    align-self: stretch;
+    gap: 12px;
+  } 
+
+  .experience__box{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 834px) {
+  .title {
+    flex-direction: column-reverse;
+    gap: 12px;
+  }
+}
